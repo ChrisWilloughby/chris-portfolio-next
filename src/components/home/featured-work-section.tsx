@@ -5,7 +5,9 @@ import { useInView } from "react-intersection-observer";
 import { ArrowRight } from "lucide-react";
 
 import { FeaturedProjectCard } from "@/components/home/featured-project-card";
-import { getFeaturedProjects } from "@/data/projects";
+import { getProjectBySlug } from "@/data/projects";
+
+const featuredSlugs = ["projectghost", "agentic-developer-portal", "spycloud"];
 
 export function FeaturedWorkSection() {
   const { ref, inView } = useInView({
@@ -13,7 +15,9 @@ export function FeaturedWorkSection() {
     threshold: 0.1,
   });
 
-  const featuredProjects = getFeaturedProjects().slice(0, 3);
+  const featuredProjects = featuredSlugs
+    .map((slug) => getProjectBySlug(slug))
+    .filter((project) => project !== undefined);
 
   return (
     <section

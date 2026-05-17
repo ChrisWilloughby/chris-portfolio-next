@@ -1,16 +1,13 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import MDXComponents from './mdx-components';
+import { useMemo } from "react";
 
 interface MDXContentProps {
   content: string;
 }
 
 export default function MDXContent({ content }: MDXContentProps) {
-  const [processedContent, setProcessedContent] = useState('');
-
-  useEffect(() => {
+  const processedContent = useMemo(() => {
     // Simple MDX-like processing for demonstration
     // In a real implementation, you'd use @mdx-js/loader or similar
     let processed = content;
@@ -55,12 +52,8 @@ export default function MDXContent({ content }: MDXContentProps) {
     // Convert blockquotes
     processed = processed.replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>');
     
-    setProcessedContent(processed);
+    return processed;
   }, [content]);
-
-  if (!processedContent) {
-    return <div>Loading...</div>;
-  }
 
   return (
     <div 

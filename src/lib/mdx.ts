@@ -61,7 +61,7 @@ export function getMDXPost(slug: string): MDXPost | null {
       readingTime: readingTime(content).text,
       content,
     };
-  } catch (error) {
+  } catch {
     return null;
   }
 }

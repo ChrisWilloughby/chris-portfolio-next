@@ -156,9 +156,9 @@ export default function ResumePage() {
       <section className="text-center">
         <Card className="border border-white/10 bg-white/[0.02] backdrop-blur">
           <CardContent className="pt-6">
-            <h3 className="text-lg font-semibold mb-2 text-white">Let's Work Together</h3>
+            <h3 className="text-lg font-semibold mb-2 text-white">Let&apos;s Work Together</h3>
             <p className="text-white/60 mb-4">
-              I'm always interested in exciting opportunities and challenging projects.
+              I&apos;m always interested in exciting opportunities and challenging projects.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild className="border border-white/10 bg-white/[0.02] hover:bg-white/[0.05] text-white">

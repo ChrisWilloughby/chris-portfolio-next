@@ -17,7 +17,7 @@ import { getProjectBySlug, type Project } from "@/data/projects";
 const selectedSlugs = [
   "projectghost",
   "agentic-developer-portal",
-  "spycloud-design-system-accessibility",
+  "spycloud",
   "cisco-devnet-sandbox",
 ];
 
@@ -26,7 +26,7 @@ const selectedCopy: Record<string, string> = {
     "A native macOS product exploring AI-assisted outreach, relationship intelligence, and workflow momentum for modern job search.",
   "agentic-developer-portal":
     "UX workflow systems for AI-assisted repository management and agent execution.",
-  "spycloud-design-system-accessibility":
+  spycloud:
     "Accessibility remediation that expanded into design-system foundations, token consistency, and stronger alignment between Figma, React, and SCSS.",
   "cisco-devnet-sandbox":
     "Frontend systems, SVG animation, and developer platform UX for Cisco DevNet Sandbox and a real-time event experience.",
@@ -40,22 +40,6 @@ const additionalExperience = [
       "Internal customer service and sales tooling with React UI components, workflow redesign, and design sprint collaboration.",
     accent: "from-slate-200/12",
     initials: "A",
-  },
-  {
-    slug: "brightspeed-customer-service-redesign",
-    label: "BrightSpeed",
-    summary:
-      "Customer service application redesign focused on operational clarity, agent workflows, and accessible enterprise UI patterns.",
-    accent: "from-amber-200/10",
-    initials: "BS",
-  },
-  {
-    slug: "att-genai-enterprise-tools",
-    label: "AT&T",
-    summary:
-      "NDA-safe enterprise GenAI tooling work focused on secure internal workflows, scalable frontend patterns, and usability for internal teams.",
-    accent: "from-cyan-200/12",
-    initials: "AT&T",
   },
 ];
 
@@ -310,9 +294,9 @@ export default function WorkPage() {
               Enterprise work, distilled.
             </h2>
             <p className="mt-5 text-base leading-7 text-white/50">
-              A concise view of enterprise projects where the work is
-              NDA-sensitive, internally focused, or better represented through
-              outcomes than screenshots.
+              A concise view of enterprise work where the details are
+              internally focused and better represented through outcomes than
+              screenshots.
             </p>
           </div>
 

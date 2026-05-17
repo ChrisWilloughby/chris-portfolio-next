@@ -39,24 +39,14 @@ export function HeroBanner() {
             className="object-cover object-right brightness-[0.28] contrast-[1.4] saturate-[0.7]"
           />
           <div className="absolute inset-0 bg-gradient-to-l from-black/55 via-black/85 to-black/98" />
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/25 via-transparent to-blue-950/20" />
         </div>
 
         <div
-          className="absolute inset-0 bg-black/55"
+          className="absolute inset-0 bg-black/62"
           style={{
             clipPath: "polygon(49% 0%, 100% 0%, 100% 100%, 41% 100%)",
           }}
         />
-
-        <div
-          className="pointer-events-none absolute inset-0"
-          style={{
-            clipPath: "polygon(45.8% 0%, 46.3% 0%, 39.8% 100%, 39.3% 100%)",
-          }}
-        >
-          <div className="h-full w-full bg-gradient-to-b from-cyan-200/28 via-blue-400/12 to-transparent" />
-        </div>
 
         {/* Center </> mark */}
 <div
@@ -72,11 +62,12 @@ export function HeroBanner() {
       inView ? "opacity-100 scale-100" : "opacity-0 scale-95"
     }`}
   >
+    <div className="absolute h-28 w-28 rounded-full bg-cyan-100/[0.055] blur-2xl md:h-36 md:w-36" />
     <span
-      className="text-[58px] font-bold tracking-tighter text-cyan-100/45 md:text-[74px]"
+      className="relative text-[58px] font-bold tracking-tighter text-cyan-100/42 md:text-[74px]"
       style={{
         textShadow:
-          "0 0 14px rgba(125,211,252,0.32), 0 0 34px rgba(59,130,246,0.18)",
+          "0 0 12px rgba(125,211,252,0.28), 0 0 26px rgba(125,211,252,0.12)",
         fontFamily:
           "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
       }}
@@ -98,15 +89,15 @@ export function HeroBanner() {
         Chris Willoughby
       </h1>
 
-      <p className="mt-4 max-w-xl text-sm text-white/70 md:text-lg">
+      <p className="mt-3 max-w-xl text-sm text-white/68 md:text-lg">
         Senior Product Designer who codes production UI
       </p>
 
-      <div className="mt-7 flex flex-wrap items-center gap-2">
+      <div className="mt-6 flex flex-wrap items-center gap-2">
         {["Next.js", "Tailwind", "MDX", "shadcn/ui", "TypeScript"].map((t) => (
           <span
             key={t}
-            className="rounded-full border border-white/8 bg-white/[0.025] px-3.5 py-1 text-[10px] tracking-[0.16em] text-white/55 backdrop-blur-sm md:text-xs"
+            className="rounded-full border border-white/8 bg-white/[0.018] px-3.5 py-1 text-[10px] tracking-[0.16em] text-white/50 backdrop-blur-sm md:text-xs"
           >
             {t}
           </span>

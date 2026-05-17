@@ -37,7 +37,7 @@ export function ResumePreviewSection() {
           </div>
 
           <div className="space-y-6 mb-10">
-            {latestRoles.map((role, index) => (
+            {latestRoles.map((role) => (
               <div
                 key={role.id}
                 className="p-6 rounded-xl border border-white/8 bg-white/[0.02] backdrop-blur-sm"
