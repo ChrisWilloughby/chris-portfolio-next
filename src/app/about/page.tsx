@@ -1,215 +1,238 @@
-import { Mail, MapPin, Calendar, Coffee, Code, Music, Camera, Book } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
-const interests = [
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
+const philosophy = [
   {
-    icon: Code,
-    title: "Open Source",
-    description: "Contributing to projects and building tools that help developers be more productive."
+    title: "Systems thinking",
+    description:
+      "I’m usually more interested in the structure underneath the interface than the interface itself — workflows, relationships, states, and how decisions move through a system.",
   },
   {
-    icon: Coffee,
-    title: "Coffee & Code",
-    description: "Perfecting the art of brewing while writing clean, efficient code."
+    title: "Clarity over complexity",
+    description:
+      "The best interfaces often remove a step, reduce hesitation, or make a decision feel obvious without drawing attention to themselves.",
   },
   {
-    icon: Music,
-    title: "Music Production",
-    description: "Creating electronic music and exploring the intersection of art and technology."
+    title: "Accessibility",
+    description:
+      "I don’t treat accessibility as a compliance layer. It’s part of how product quality and usability are defined from the beginning.",
   },
   {
-    icon: Camera,
-    title: "Photography",
-    description: "Capturing moments and exploring visual storytelling through lenses."
+    title: "Implementation-aware design",
+    description:
+      "I work best when design and engineering stay closely connected. Good systems survive handoff, scale over time, and remain maintainable.",
   },
   {
-    icon: Book,
-    title: "Continuous Learning",
-    description: "Always exploring new technologies and staying current with industry trends."
-  }
+    title: "Reducing friction",
+    description:
+      "A lot of my work focuses on reducing cognitive load — helping products feel calmer, clearer, and easier to operate under real conditions.",
+  },
 ];
 
-const values = [
-  {
-    title: "Quality First",
-    description: "Writing clean, maintainable code that stands the test of time."
-  },
-  {
-    title: "User-Centered",
-    description: "Building products that solve real problems and delight users."
-  },
+const workingMethods = [
   {
     title: "Collaboration",
-    description: "Working effectively with teams and fostering inclusive environments."
+    description:
+      "I prefer close collaboration between product, design, and engineering so decisions stay grounded, practical, and buildable.",
   },
   {
-    title: "Innovation",
-    description: "Embracing new challenges and finding creative solutions to complex problems."
+    title: "Design + engineering overlap",
+    description:
+      "Some of the most valuable product decisions happen at the boundary between interface design and implementation.",
   },
   {
-    title: "Growth Mindset",
-    description: "Continuously learning and adapting to new technologies and methodologies."
+    title: "Prototyping",
+    description:
+      "I use prototypes to pressure-test ideas early — interaction pacing, hierarchy, friction points, and whether a workflow actually holds together.",
   },
   {
-    title: "Integrity",
-    description: "Building trust through transparency, honesty, and ethical practices."
-  }
+    title: "Iteration",
+    description:
+      "I tend to work iteratively: simplify the problem, refine the system, and improve the product through steady cycles rather than giant redesigns.",
+  },
+  {
+    title: "Design systems",
+    description:
+      "I care about systems when they improve clarity, accessibility, consistency, and speed for both users and the teams building the product.",
+  },
+  {
+    title: "Product thinking",
+    description:
+      "I try to connect interface decisions back to user behavior, operational realities, and the long-term direction of the product.",
+  },
 ];
 
 export default function AboutPage() {
   return (
-    <div className="container px-4 py-16 mx-auto max-w-4xl">
-      <section className="text-center space-y-6 mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-          About Me
-        </h1>
-        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Passionate full-stack developer with a love for creating elegant solutions 
-          to complex problems. I believe in the power of technology to transform ideas 
-          into reality and improve people's lives.
-        </p>
-      </section>
+    <main className="min-h-screen overflow-hidden bg-black text-white">
+      <section className="relative py-20 md:py-28">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_12%,rgba(125,211,252,0.1),transparent_30%),radial-gradient(circle_at_82%_18%,rgba(30,64,175,0.12),transparent_34%)]" />
+        <div className="pointer-events-none absolute inset-0 opacity-[0.12] hero-grain" />
 
-      <section className="grid md:grid-cols-2 gap-8 mb-16">
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Calendar className="h-5 w-5 text-primary" />
-              My Journey
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p className="text-muted-foreground">
-              My journey into software development began with a curiosity about how websites work 
-              and evolved into a passion for building scalable, user-centric applications. 
-              Over the past 5+ years, I've had the privilege of working with diverse teams 
-              and tackling challenges across various industries.
+        <div className="container relative mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div>
+            <Badge
+              variant="outline"
+              className="mb-6 border-cyan-100/15 bg-black/35 text-[10px] uppercase tracking-[0.22em] text-cyan-50/70"
+            >
+              Designer · Engineer · Systems Thinker
+            </Badge>
+            <h1 className="text-5xl font-semibold tracking-tight text-white md:text-7xl">
+              About
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/64 md:text-2xl">
+              I design and build product systems where clarity, accessibility,
+              and implementation quality matter as much as the surface.
             </p>
-            <p className="text-muted-foreground">
-              I specialize in full-stack development with a focus on modern JavaScript frameworks, 
-              but I'm always excited to learn new technologies and approaches. My experience 
-              ranges from startups to enterprise environments, giving me a broad perspective 
-              on software development best practices.
-            </p>
-          </CardContent>
-        </Card>
+          </div>
 
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <MapPin className="h-5 w-5 text-primary" />
-              Current Focus
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p className="text-muted-foreground">
-              Currently based in San Francisco, I'm working on enterprise-scale applications 
-              that serve thousands of users daily. My focus is on performance optimization, 
-              system architecture, and mentoring the next generation of developers.
-            </p>
-            <p className="text-muted-foreground">
-              I'm particularly interested in the intersection of AI and web development, 
-              exploring how machine learning can enhance user experiences and automate 
-              complex workflows. When I'm not coding, you'll find me contributing to open 
-              source projects or experimenting with new technologies.
-            </p>
-          </CardContent>
-        </Card>
-      </section>
-
-      <section className="mb-16">
-        <h2 className="text-2xl font-bold text-center mb-8">Core Values</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {values.map((value, index) => (
-            <Card key={index} className="border-border/40 bg-card/50 backdrop-blur">
-              <CardHeader>
-                <CardTitle className="text-lg">{value.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">{value.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-black shadow-[0_30px_120px_rgba(0,0,0,0.52)]">
+            <div className="relative min-h-[560px]">
+              <Image
+                src="/images/about/about-portrait.jpg"
+                alt="Portrait of Chris Willoughby"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover opacity-[0.9] brightness-[0.82] contrast-125 saturate-[0.86]"
+              />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_42%,transparent_0%,transparent_52%,rgba(0,0,0,0.42)_100%),linear-gradient(180deg,rgba(2,6,23,0.08),transparent_42%,rgba(2,6,23,0.56))]" />
+              <div className="absolute inset-0 opacity-[0.14] hero-grain" />
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="mb-16">
-        <h2 className="text-2xl font-bold text-center mb-8">Beyond Code</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {interests.map((interest, index) => {
-            const Icon = interest.icon;
-            return (
-              <Card key={index} className="border-border/40 bg-card/50 backdrop-blur">
+      <section className="relative border-y border-white/5 py-20 md:py-28">
+        <div className="container mx-auto max-w-6xl px-6">
+          <div className="mb-12 max-w-3xl">
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.28em] text-cyan-100/45">
+              Working Philosophy
+            </p>
+            <h2 className="text-3xl font-semibold tracking-tight text-white md:text-5xl">
+              Calm systems, clear decisions.
+            </h2>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+            {philosophy.map((item) => (
+              <Card
+                key={item.title}
+                className="border-white/10 bg-white/[0.018] text-white shadow-[0_16px_60px_rgba(0,0,0,0.24)]"
+              >
                 <CardHeader>
-                  <Icon className="h-8 w-8 text-primary mb-2" />
-                  <CardTitle className="text-lg">{interest.title}</CardTitle>
-                  <CardDescription>{interest.description}</CardDescription>
+                  <CardTitle className="text-base leading-6 tracking-tight text-white">
+                    {item.title}
+                  </CardTitle>
+                  <CardDescription className="text-sm leading-6 text-white/52">
+                    {item.description}
+                  </CardDescription>
                 </CardHeader>
               </Card>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className="mb-16">
-        <Card>
-          <CardHeader>
-            <CardTitle>Technical Philosophy</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p className="text-muted-foreground">
-              I believe that great software is built on a foundation of clean code, 
-              thoughtful architecture, and a deep understanding of user needs. 
-              My approach emphasizes:
+      <section className="relative py-20 md:py-28">
+        <div className="container mx-auto max-w-6xl px-6">
+          <div className="mb-12 max-w-3xl">
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.28em] text-cyan-100/45">
+              How I Work
             </p>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <h4 className="font-medium">Development Principles</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Write code that humans can understand</li>
-                  <li>• Test early, test often</li>
-                  <li>• Optimize for maintainability</li>
-                  <li>• Embrace iterative development</li>
-                </ul>
-              </div>
-              <div className="space-y-2">
-                <h4 className="font-medium">Team Collaboration</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Knowledge sharing and documentation</li>
-                  <li>• Constructive code reviews</li>
-                  <li>• Clear communication</li>
-                  <li>• Supporting team growth</li>
-                </ul>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+            <h2 className="text-3xl font-semibold tracking-tight text-white md:text-5xl">
+              Between product intent and production reality.
+            </h2>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {workingMethods.map((method) => (
+              <Card
+                key={method.title}
+                className="border-white/10 bg-zinc-950/72 text-white shadow-[0_22px_80px_rgba(0,0,0,0.28)]"
+              >
+                <CardHeader>
+                  <CardTitle className="text-xl tracking-tight text-white">
+                    {method.title}
+                  </CardTitle>
+                  <CardDescription className="text-sm leading-6 text-white/56">
+                    {method.description}
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            ))}
+          </div>
+        </div>
       </section>
 
-      <section className="text-center">
-        <Card>
-          <CardContent className="pt-6">
-            <h3 className="text-lg font-semibold mb-2">Let's Connect</h3>
-            <p className="text-muted-foreground mb-4">
-              I'm always open to discussing new opportunities, sharing knowledge, 
-              or collaborating on interesting projects.
+      <section className="relative border-y border-white/5 py-20 md:py-28">
+        <div className="container mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div>
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.28em] text-cyan-100/45">
+              Personal Layer
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild>
-                <a href="mailto:chris@example.com">
-                  <Mail className="mr-2 h-4 w-4" />
-                  Send a Message
-                </a>
-              </Button>
-              <Button variant="outline" asChild>
-                <a href="/work">View My Work</a>
-              </Button>
+            <h2 className="text-3xl font-semibold tracking-tight text-white md:text-5xl">
+              Outside the interface.
+            </h2>
+            <p className="mt-5 max-w-xl text-base leading-7 text-white/56 md:text-lg">
+              Outside of work, I’m usually building something, learning something, or disappearing into music for a while.
+              I like systems that evolve over time — products, workflows, instruments, habits — and that mindset naturally 
+              carries into how I design.
+            </p>
+          </div>
+
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-[0_24px_90px_rgba(0,0,0,0.42)]">
+            <div className="relative aspect-[4/3]">
+              <Image
+                src="/images/about/about-noir.jpg"
+                alt="Noir portrait accent"
+                fill
+                sizes="(max-width: 1024px) 100vw, 38vw"
+                className="object-cover opacity-[0.72] brightness-[0.72] contrast-125 saturate-[0.78]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/62 via-transparent to-black/24" />
+              <div className="absolute inset-0 opacity-[0.16] hero-grain" />
             </div>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
       </section>
-    </div>
+
+      <section className="relative py-20 md:py-28">
+        <div className="container mx-auto max-w-4xl px-6 text-center">
+          <h2 className="text-3xl font-semibold tracking-tight text-white md:text-5xl">
+          I’m most effective where product thinking, systems design, and implementation overlap.
+          </h2>
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/56">
+            My work is about making complex products easier to understand, easier to build, and easier to trust.
+          </p>
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <Button asChild size="lg" className="bg-white text-black hover:bg-white/90">
+              <Link href="/work">
+                View Work
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white/12 bg-white/[0.025] text-white hover:border-cyan-100/24 hover:bg-cyan-100/[0.06] hover:text-white"
+            >
+              <Link href="/resume">View Resume</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

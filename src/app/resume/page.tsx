@@ -1,3 +1,4 @@
+"use client";
 import { Download, Mail, MapPin, Calendar, ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -28,28 +29,28 @@ export default function ResumePage() {
   };
 
   return (
-    <div className="container px-4 py-16 mx-auto max-w-4xl">
-      <section className="text-center space-y-6 mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-          Resume
-        </h1>
-        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Senior Product Designer who codes production UI with 5+ years of experience 
-          building scalable web applications and leading design systems.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg">
-            <Download className="mr-2 h-4 w-4" />
-            Download PDF
-          </Button>
-          <Button variant="outline" size="lg" asChild>
-            <a href="mailto:chris@example.com">
-              <Mail className="mr-2 h-4 w-4" />
-              Contact Me
-            </a>
-          </Button>
-        </div>
-      </section>
+    <div className="min-h-screen bg-black">
+      <div className="container px-4 py-16 mx-auto max-w-4xl">
+        <section className="text-center space-y-6 mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
+            Resume
+          </h1>
+          <p className="text-xl text-white/60 max-w-2xl mx-auto">
+            UI Engineer and UX Designer with 10+ years of experience leading design and development of enterprise-scale digital products.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="border border-white/10 bg-white/[0.02] hover:bg-white/[0.05] text-white">
+              <Download className="mr-2 h-4 w-4" />
+              Download PDF
+            </Button>
+            <Button variant="outline" size="lg" asChild className="border-white/10 bg-white/[0.02] hover:bg-white/[0.05] text-white">
+              <a href="mailto:cwilloughby132@gmail.com">
+                <Mail className="mr-2 h-4 w-4" />
+                Contact Me
+              </a>
+            </Button>
+          </div>
+        </section>
 
       <section className="mb-16">
         <div className="space-y-8">
@@ -57,36 +58,36 @@ export default function ResumePage() {
             <div key={role.id} className="relative">
               {/* Timeline Line */}
               {index < resumeRoles.length - 1 && (
-                <div className="absolute left-8 top-20 w-0.5 h-full bg-border/40" />
+                <div className="absolute left-8 top-20 w-0.5 h-full bg-white/10" />
               )}
-              
+
               {/* Role Card */}
               <div className="flex gap-6">
                 {/* Timeline Dot */}
                 <div className="flex-shrink-0">
                   <div className={`w-16 h-16 rounded-full border-4 flex items-center justify-center ${
-                    role.current 
-                      ? 'bg-primary border-primary' 
-                      : 'bg-background border-border'
+                    role.current
+                      ? 'bg-cyan-500/20 border-cyan-500/50'
+                      : 'bg-white/[0.02] border-white/10'
                   }`}>
                     <div className={`w-3 h-3 rounded-full ${
-                      role.current ? 'bg-primary-foreground' : 'bg-muted-foreground'
+                      role.current ? 'bg-cyan-400' : 'bg-white/30'
                     }`} />
                   </div>
                 </div>
 
                 {/* Role Content */}
                 <div className="flex-1 min-w-0">
-                  <Card className="border-border/40 bg-card/50 backdrop-blur">
+                  <Card className="border border-white/10 bg-white/[0.02] backdrop-blur">
                     <CardHeader>
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                         <div className="space-y-2">
-                          <CardTitle className="text-xl">{role.title}</CardTitle>
-                          <CardDescription className="text-base font-medium text-primary">
+                          <CardTitle className="text-xl text-white">{role.title}</CardTitle>
+                          <CardDescription className="text-base font-medium text-cyan-400">
                             {role.company}
                           </CardDescription>
                         </div>
-                        <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                        <div className="flex items-center gap-4 text-sm text-white/50">
                           <span className="flex items-center gap-1">
                             <MapPin className="h-3 w-3" />
                             {role.location}
@@ -97,60 +98,30 @@ export default function ResumePage() {
                           </span>
                         </div>
                       </div>
-                      
+
                       {/* Tech Stack */}
                       <div className="flex flex-wrap gap-2">
-                        {role.techStack.map((tech) => (
-                          <Badge key={tech} variant="secondary" className="text-xs">
+                        {role.stack.map((tech) => (
+                          <Badge key={tech} variant="secondary" className="text-xs border border-white/10 bg-white/[0.02] text-white/70">
                             {tech}
                           </Badge>
                         ))}
                       </div>
                     </CardHeader>
-                    
+
                     <CardContent className="space-y-4">
                       {/* Responsibilities */}
                       <div>
-                        <h4 className="font-medium mb-3">Key Responsibilities:</h4>
-                        <ul className="space-y-2 text-sm text-muted-foreground">
-                          {role.responsibilities.map((responsibility, i) => (
+                        <h4 className="font-medium mb-3 text-white">Key Responsibilities:</h4>
+                        <ul className="space-y-2 text-sm text-white/60">
+                          {role.bullets.map((bullet, i) => (
                             <li key={i} className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                              {responsibility}
+                              <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 mt-2 flex-shrink-0" />
+                              {bullet}
                             </li>
                           ))}
                         </ul>
                       </div>
-
-                      {/* Expandable Context */}
-                      {role.context && (
-                        <Collapsible
-                          open={expandedRoles.has(role.id)}
-                          onOpenChange={() => toggleExpanded(role.id)}
-                        >
-                          <CollapsibleTrigger asChild>
-                            <Button 
-                              variant="ghost" 
-                              size="sm" 
-                              className="w-full justify-between text-primary hover:text-primary/80"
-                            >
-                              <span>More context</span>
-                              {expandedRoles.has(role.id) ? (
-                                <ChevronUp className="h-4 w-4" />
-                              ) : (
-                                <ChevronDown className="h-4 w-4" />
-                              )}
-                            </Button>
-                          </CollapsibleTrigger>
-                          <CollapsibleContent className="mt-4">
-                            <div className="p-4 rounded-lg bg-muted/50 border border-border/40">
-                              <p className="text-sm text-muted-foreground leading-relaxed">
-                                {role.context}
-                              </p>
-                            </div>
-                          </CollapsibleContent>
-                        </Collapsible>
-                      )}
                     </CardContent>
                   </Card>
                 </div>
@@ -162,27 +133,27 @@ export default function ResumePage() {
 
       {/* Skills Summary */}
       <section className="mb-16">
-        <Card>
+        <Card className="border border-white/10 bg-white/[0.02] backdrop-blur">
           <CardHeader>
-            <CardTitle>Technical Skills</CardTitle>
+            <CardTitle className="text-white">Technical Skills</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-medium mb-3">Frontend & Design</h4>
+                <h4 className="font-medium mb-3 text-white">Frontend & Design</h4>
                 <div className="flex flex-wrap gap-2">
-                  {["React", "Next.js", "TypeScript", "Vue.js", "Figma", "TailwindCSS", "CSS3", "HTML5"].map((skill) => (
-                    <Badge key={skill} variant="outline" className="text-xs">
+                  {["React", "Next.js", "TypeScript", "Figma", "TailwindCSS", "Material UI", "Design Systems", "WCAG"].map((skill) => (
+                    <Badge key={skill} variant="outline" className="text-xs border border-white/10 bg-white/[0.02] text-white/70">
                       {skill}
                     </Badge>
                   ))}
                 </div>
               </div>
               <div>
-                <h4 className="font-medium mb-3">Backend & Tools</h4>
+                <h4 className="font-medium mb-3 text-white">AI & Enterprise</h4>
                 <div className="flex flex-wrap gap-2">
-                  {["Node.js", "Express", "PostgreSQL", "MongoDB", "AWS", "Git", "Jest", "Docker"].map((skill) => (
-                    <Badge key={skill} variant="outline" className="text-xs">
+                  {["GenAI", "Agentic AI", "AEM", "JIRA", "Azure", "Git", "UX Research", "Prototyping"].map((skill) => (
+                    <Badge key={skill} variant="outline" className="text-xs border border-white/10 bg-white/[0.02] text-white/70">
                       {skill}
                     </Badge>
                   ))}
@@ -195,20 +166,20 @@ export default function ResumePage() {
 
       {/* CTA Section */}
       <section className="text-center">
-        <Card>
+        <Card className="border border-white/10 bg-white/[0.02] backdrop-blur">
           <CardContent className="pt-6">
-            <h3 className="text-lg font-semibold mb-2">Let's Work Together</h3>
-            <p className="text-muted-foreground mb-4">
+            <h3 className="text-lg font-semibold mb-2 text-white">Let's Work Together</h3>
+            <p className="text-white/60 mb-4">
               I'm always interested in exciting opportunities and challenging projects.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild>
-                <a href="mailto:chris@example.com">
+              <Button asChild className="border border-white/10 bg-white/[0.02] hover:bg-white/[0.05] text-white">
+                <a href="mailto:cwilloughby132@gmail.com">
                   <Mail className="mr-2 h-4 w-4" />
                   Get in Touch
                 </a>
               </Button>
-              <Button variant="outline" asChild>
+              <Button variant="outline" asChild className="border-white/10 bg-white/[0.02] hover:bg-white/[0.05] text-white">
                 <a href="/work">
                   <ExternalLink className="mr-2 h-4 w-4" />
                   View My Work
@@ -218,6 +189,7 @@ export default function ResumePage() {
           </CardContent>
         </Card>
       </section>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <defs>
+    <style>text { font-family: Inter, -apple-system, sans-serif; } .mono { font-family: 'Courier New', monospace; }</style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1440" height="900" fill="#F7F6F3"/>
+
+  <!-- ── SIDEBAR (same as screen 1) ── -->
+  <rect x="0" y="0" width="220" height="900" fill="#FFFFFF"/>
+  <rect x="219" y="0" width="1" height="900" fill="#E3E1DC"/>
+  <rect x="0" y="0" width="220" height="48" fill="#FFFFFF"/>
+  <rect x="14" y="13" width="22" height="22" rx="5" fill="#111110"/>
+  <text x="44" y="29" font-size="13" font-weight="600" fill="#111110">DevPortal</text>
+  <rect x="0" y="47" width="220" height="1" fill="#E3E1DC"/>
+  <text x="14" y="74" font-size="10" font-weight="600" fill="#9B9890" letter-spacing="0.7">WORKSPACES</text>
+  <rect x="4" y="82" width="212" height="32" rx="6" fill="#F2F1EE"/>
+  <circle cx="17" cy="98" r="4" fill="#34C759"/>
+  <text x="28" y="103" font-size="12" font-weight="500" fill="#111110">apple-internal</text>
+  <rect x="4" y="118" width="212" height="32" rx="6" fill="none"/>
+  <circle cx="17" cy="134" r="4" fill="#8E8E93"/>
+  <text x="28" y="139" font-size="12" fill="#605E59">open-source</text>
+  <text x="14" y="212" font-size="10" font-weight="600" fill="#9B9890" letter-spacing="0.7">NAVIGATION</text>
+  <rect x="4" y="220" width="212" height="32" rx="6" fill="#F2F1EE"/>
+  <text x="30" y="241" font-size="12" font-weight="500" fill="#111110">Repositories</text>
+  <rect x="0" y="856" width="220" height="1" fill="#E3E1DC"/>
+  <text x="30" y="882" font-size="11" fill="#9B9890">No agents running</text>
+
+  <!-- ── TOPBAR ── -->
+  <rect x="220" y="0" width="1220" height="48" fill="#FFFFFF"/>
+  <rect x="220" y="47" width="1220" height="1" fill="#E3E1DC"/>
+  <text x="240" y="29" font-size="12.5" fill="#9B9890">Repositories</text>
+  <text x="318" y="29" font-size="12.5" fill="#9B9890">/</text>
+  <text x="330" y="29" font-size="12.5" font-weight="500" fill="#111110">ml-inference-engine</text>
+  <!-- View on GitHub button -->
+  <rect x="1090" y="10" width="130" height="28" rx="6" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="1102" y="29" font-size="12" font-weight="500" fill="#605E59">View on GitHub ↗</text>
+  <!-- Run Agent Task button -->
+  <rect x="1230" y="10" width="152" height="28" rx="6" fill="#111110"/>
+  <text x="1245" y="29" font-size="12" font-weight="500" fill="#FFFFFF">▷  Run Agent Task</text>
+  <!-- Avatar -->
+  <circle cx="1406" cy="24" r="13" fill="#EBF4FF"/>
+  <text x="1399" y="29" font-size="10" font-weight="600" fill="#0F7AE5">JD</text>
+
+  <!-- ── METRICS GRID ── -->
+  <rect x="220" y="48" width="1220" height="110" fill="#FFFFFF"/>
+  <rect x="220" y="157" width="1220" height="1" fill="#E3E1DC"/>
+
+  <!-- Coverage -->
+  <rect x="240" y="64" width="284" height="82" rx="10" fill="#F2F1EE"/>
+  <text x="254" y="80" font-size="10.5" font-weight="600" fill="#9B9890" letter-spacing="0.5">COVERAGE</text>
+  <text x="254" y="108" font-size="22" font-weight="600" fill="#111110">74%</text>
+  <text x="254" y="130" font-size="11" fill="#D97706">↓ 3% this week</text>
+
+  <!-- Open PRs -->
+  <rect x="534" y="64" width="284" height="82" rx="10" fill="#F2F1EE"/>
+  <text x="548" y="80" font-size="10.5" font-weight="600" fill="#9B9890" letter-spacing="0.5">OPEN PRs</text>
+  <text x="548" y="108" font-size="22" font-weight="600" fill="#111110">7</text>
+  <text x="548" y="130" font-size="11" fill="#9B9890">awaiting review</text>
+
+  <!-- Issues -->
+  <rect x="828" y="64" width="284" height="82" rx="10" fill="#F2F1EE"/>
+  <text x="842" y="80" font-size="10.5" font-weight="600" fill="#9B9890" letter-spacing="0.5">ISSUES</text>
+  <text x="842" y="108" font-size="22" font-weight="600" fill="#DC2626">3</text>
+  <text x="842" y="130" font-size="11" fill="#DC2626">1 critical</text>
+
+  <!-- Last Deploy -->
+  <rect x="1122" y="64" width="298" height="82" rx="10" fill="#F2F1EE"/>
+  <text x="1136" y="80" font-size="10.5" font-weight="600" fill="#9B9890" letter-spacing="0.5">LAST DEPLOY</text>
+  <text x="1136" y="108" font-size="16" font-weight="600" fill="#111110">2h ago</text>
+  <text x="1136" y="130" font-size="11" fill="#16A34A">v2.4.1 · stable</text>
+
+  <!-- ── TWO COLUMN DETAIL ── -->
+  <rect x="220" y="158" width="1220" height="742" fill="#FFFFFF"/>
+  <!-- Column divider -->
+  <rect x="830" y="158" width="1" height="742" fill="#E3E1DC"/>
+
+  <!-- LEFT COLUMN -->
+  <text x="240" y="186" font-size="10.5" font-weight="600" fill="#9B9890" letter-spacing="0.6">DEPENDENCY HEALTH</text>
+
+  <!-- Bar: Up to date 82% -->
+  <rect x="240" y="200" width="400" height="5" rx="3" fill="#E8E6E1"/>
+  <rect x="240" y="200" width="328" height="5" rx="3" fill="#16A34A"/>
+  <text x="650" y="208" font-size="11" fill="#9B9890">Up to date (82%)</text>
+
+  <!-- Bar: Minor 12% -->
+  <rect x="240" y="224" width="400" height="5" rx="3" fill="#E8E6E1"/>
+  <rect x="240" y="224" width="48" height="5" rx="3" fill="#D97706"/>
+  <text x="650" y="232" font-size="11" fill="#9B9890">Minor updates (12%)</text>
+
+  <!-- Bar: Major 6% -->
+  <rect x="240" y="248" width="400" height="5" rx="3" fill="#E8E6E1"/>
+  <rect x="240" y="248" width="24" height="5" rx="3" fill="#DC2626"/>
+  <text x="650" y="256" font-size="11" fill="#9B9890">Major updates (6%)</text>
+
+  <!-- Recent Activity -->
+  <text x="240" y="290" font-size="10.5" font-weight="600" fill="#9B9890" letter-spacing="0.6">RECENT ACTIVITY</text>
+  <circle cx="246" cy="310" r="3" fill="#16A34A"/>
+  <text x="258" y="314" font-size="11.5" fill="#605E59">Agent completed PR #182 — bump lodash to 4.17.21</text>
+  <text x="258" y="330" font-size="10.5" fill="#9B9890">1h ago</text>
+
+  <circle cx="246" cy="348" r="3" fill="#D97706"/>
+  <text x="258" y="352" font-size="11.5" fill="#605E59">Test coverage dropped by 3%</text>
+  <text x="258" y="368" font-size="10.5" fill="#9B9890">2h ago</text>
+
+  <circle cx="246" cy="386" r="3" fill="#0F7AE5"/>
+  <text x="258" y="390" font-size="11.5" fill="#605E59">Deployed v2.4.1 to staging</text>
+  <text x="258" y="406" font-size="10.5" fill="#9B9890">2h ago</text>
+
+  <circle cx="246" cy="424" r="3" fill="#E3E1DC"/>
+  <text x="258" y="428" font-size="11.5" fill="#605E59">PR #181 merged by @jdoe</text>
+  <text x="258" y="444" font-size="10.5" fill="#9B9890">5h ago</text>
+
+  <!-- RIGHT COLUMN -->
+  <text x="850" y="186" font-size="10.5" font-weight="600" fill="#9B9890" letter-spacing="0.6">TOP FILES BY CHURN</text>
+
+  <text x="850" y="210" font-size="10.5" fill="#605E59" class="mono">src/inference/runtime.ts</text>
+  <rect x="1280" y="198" width="100" height="20" rx="4" fill="#FEF2F2"/>
+  <text x="1292" y="212" font-size="10.5" font-weight="500" fill="#DC2626">48 changes</text>
+  <rect x="850" y="220" width="570" height="1" fill="#E3E1DC"/>
+
+  <text x="850" y="242" font-size="10.5" fill="#605E59" class="mono">src/pipeline/scheduler.ts</text>
+  <rect x="1280" y="230" width="100" height="20" rx="4" fill="#FFFBEB"/>
+  <text x="1292" y="244" font-size="10.5" font-weight="500" fill="#D97706">31 changes</text>
+  <rect x="850" y="252" width="570" height="1" fill="#E3E1DC"/>
+
+  <text x="850" y="274" font-size="10.5" fill="#605E59" class="mono">tests/unit/runtime.test.ts</text>
+  <rect x="1280" y="262" width="100" height="20" rx="4" fill="#F2F1EE"/>
+  <text x="1292" y="276" font-size="10.5" font-weight="500" fill="#605E59">22 changes</text>
+  <rect x="850" y="284" width="570" height="1" fill="#E3E1DC"/>
+
+  <!-- Quick Actions -->
+  <text x="850" y="320" font-size="10.5" font-weight="600" fill="#9B9890" letter-spacing="0.6">QUICK ACTIONS</text>
+  <rect x="850" y="330" width="540" height="32" rx="6" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="864" y="351" font-size="12" fill="#605E59">📦  Upgrade dependencies →</text>
+  <rect x="850" y="370" width="540" height="32" rx="6" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="864" y="391" font-size="12" fill="#605E59">↔  Create pull request →</text>
+  <rect x="850" y="410" width="540" height="32" rx="6" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="864" y="431" font-size="12" fill="#605E59">▷  Run tests →</text>
+
+</svg>

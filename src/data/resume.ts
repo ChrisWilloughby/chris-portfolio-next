@@ -4,113 +4,146 @@ export interface ResumeRole {
   company: string;
   location: string;
   startDate: string;
-  endDate?: string; // undefined for current role
+  endDate?: string;
   current?: boolean;
-  techStack: string[];
-  responsibilities: string[];
-  context?: string; // Optional expanded context
-  type: 'full-time' | 'contract' | 'freelance' | 'internship';
+  bullets: string[];
+  stack: string[];
 }
 
 export const resumeRoles: ResumeRole[] = [
   {
     id: "1",
-    title: "Senior Product Designer who codes production UI",
-    company: "Tech Innovations Inc.",
-    location: "San Francisco, CA",
-    startDate: "Jan 2022",
+    title: "UI Engineer",
+    company: "AT&T / Consultant via Insight Global",
+    location: "Atlanta, GA",
+    startDate: "Oct 2025",
     current: true,
-    techStack: ["React", "TypeScript", "Next.js", "Figma", "Node.js", "PostgreSQL", "AWS"],
-    responsibilities: [
-      "Lead design and development of enterprise-scale web applications serving 100K+ users",
-      "Established design system and component library used across 5 product teams",
-      "Reduced development time by 40% through reusable UI components and automated workflows",
-      "Mentored junior designers and developers in best practices for design-engineering collaboration",
-      "Collaborated with product managers to define roadmaps and technical requirements",
-      "Implemented accessibility standards achieving WCAG 2.1 AA compliance across all products"
+    bullets: [
+      "Lead UI/UX design and prototyping for enterprise-scale GenAI initiative, delivering agentic AI interfaces that accelerated design delivery cycles",
+      "Architected and maintain WCAG-compliant enterprise design system in React, improving accessibility scores and ensuring consistent component reuse across products",
+      "Integrated AI-driven automation into existing workflows and user interfaces, collaborating with cross-functional engineering and product teams",
+      "Mentored team of 1–3 designers and developers on design system standards, accessibility best practices, and React component architecture"
     ],
-    context: "As the first design-engineering hire, I built the bridge between design and development teams. This role required both strategic thinking about design systems and hands-on coding of production UI components. I established processes that enabled designers to ship production-ready code and developers to maintain design consistency.",
-    type: "full-time"
+    stack: ["React", "Figma", "Adobe Creative Suite", "WCAG", "Design Systems", "GenAI", "Agentic AI"]
   },
   {
     id: "2",
-    title: "Full-Stack Developer & UI/UX Designer",
-    company: "Digital Solutions Agency",
-    location: "Austin, TX",
-    startDate: "Jun 2020",
-    endDate: "Dec 2021",
-    techStack: ["Vue.js", "React", "Node.js", "Express", "MongoDB", "TailwindCSS", "Adobe XD"],
-    responsibilities: [
-      "Developed 15+ client projects across e-commerce, SaaS, and healthcare industries",
-      "Designed and implemented responsive user interfaces with 95% client satisfaction rate",
-      "Built RESTful APIs and real-time features using WebSocket connections",
-      "Optimized application performance, achieving 60% faster load times",
-      "Led client discovery sessions and translated business requirements into technical solutions",
-      "Managed project timelines and coordinated with cross-functional teams"
+    title: "Lead User Experience Designer",
+    company: "TechMahindra / BrightSpeed",
+    location: "Remote",
+    startDate: "June 2024",
+    endDate: "Sept 2025",
+    bullets: [
+      "Led cross-functional design team in full redesign of Customer Service Application, improving agent workflow efficiency and reducing average task time by 20%",
+      "Integrated AI-driven chat assistance into live customer interaction layer, streamlining agent response time and reducing manual task overhead",
+      "Produced wireframes and high-fidelity Figma prototypes aligned with enterprise design standards, partnering with React developers for pixel-perfect implementation",
+      "Conducted user research and workflow mapping in Miro, translating findings into measurable UX improvements across the application"
     ],
-    context: "This hybrid role allowed me to own projects from initial concept through deployment. I worked directly with clients to understand their needs, created wireframes and prototypes, then implemented the full solution. This end-to-end experience gave me deep insights into the product development lifecycle.",
-    type: "full-time"
+    stack: ["Figma", "React", "Miro", "AI", "UX Research", "Enterprise Design Systems"]
   },
   {
     id: "3",
-    title: "Frontend Developer & UI Designer",
-    company: "StartupXYZ",
-    location: "Remote",
-    startDate: "Mar 2019",
-    endDate: "May 2020",
-    techStack: ["React", "JavaScript", "CSS3", "Sass", "Jest", "Figma", "Sketch"],
-    responsibilities: [
-      "Developed responsive web applications using React and modern JavaScript",
-      "Created and maintained component library used across multiple products",
-      "Implemented pixel-perfect designs from Figma and Sketch files",
-      "Improved user engagement by 35% through UX improvements and A/B testing",
-      "Set up testing infrastructure achieving 85% code coverage",
-      "Collaborated with backend team to integrate RESTful APIs"
+    title: "Lead User Experience Designer",
+    company: "TechMahindra / Cricket Wireless",
+    location: "Atlanta, GA (Remote)",
+    startDate: "November 2023",
+    endDate: "June 2024",
+    bullets: [
+      "Defined design language for Back Office Reskin, integrating Material UI with Figma-based design systems to standardize UI patterns across the product",
+      "Led cross-functional design review sessions to refine interaction design and improve usability across back-office tools",
+      "Conducted user testing and stakeholder interviews to validate design solutions, ensuring alignment between user needs and business goals",
+      "Built AEM-based component libraries to improve UI consistency and reduce design-to-development handoff time across teams"
     ],
-    context: "Joining as the first frontend developer, I established the frontend architecture and design practices. I worked closely with the founding team to shape the product vision and user experience, while building scalable frontend systems that could grow with the company.",
-    type: "full-time"
+    stack: ["Figma", "Material UI", "AEM", "WCAG", "Design Systems", "UX Research"]
   },
   {
     id: "4",
-    title: "Freelance UI/UX Designer & Developer",
-    company: "Self-Employed",
-    location: "Remote",
-    startDate: "Sep 2018",
-    endDate: "Feb 2019",
-    techStack: ["HTML5", "CSS3", "JavaScript", "WordPress", "PHP", "Adobe Creative Suite"],
-    responsibilities: [
-      "Designed and developed websites for small businesses and startups",
-      "Created brand identities and marketing materials for 10+ clients",
-      "Managed client relationships from initial consultation to project delivery",
-      "Implemented SEO best practices improving client search rankings",
-      "Provided ongoing maintenance and support for deployed websites"
+    title: "Lead User Experience Designer",
+    company: "SpyCloud",
+    location: "Austin, TX",
+    startDate: "July 2021",
+    endDate: "July 2023",
+    bullets: [
+      "Solely architected and delivered NPM-based Design System from the ground up, standardizing 20–50 reusable UI components and design tokens across React",
+      "Owned end-to-end front-end architecture rebuild, serving as sole designer and developer bridging Figma prototypes through to React implementation",
+      "Created interactive Figma prototypes to align stakeholders and streamline developer handoff for React implementation",
+      "Mapped complex user workflows in Miro and led usability testing sessions to optimize customer journeys and measurably improve task efficiency",
+      "Managed design sprints in JIRA across cross-functional teams, ensuring consistent delivery of accessible, scalable product experiences"
     ],
-    context: "During this period, I built my foundational skills in both design and development while learning to manage client relationships and project timelines. This experience taught me the importance of clear communication and delivering value within budget constraints.",
-    type: "freelance"
+    stack: ["React", "Figma", "SCSS", "NPM", "Design Systems", "Miro", "JIRA", "WCAG"]
   },
   {
     id: "5",
-    title: "Web Development Intern",
-    company: "TechStart Inc.",
-    location: "Boston, MA",
-    startDate: "Jun 2018",
-    endDate: "Aug 2018",
-    techStack: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Git"],
-    responsibilities: [
-      "Assisted in developing responsive websites for corporate clients",
-      "Participated in daily stand-ups and sprint planning meetings",
-      "Learned and implemented Agile development methodologies",
-      "Fixed bugs and implemented minor features under senior developer guidance",
-      "Contributed to documentation and code reviews"
+    title: "Lead UX/UI Designer and Developer",
+    company: "3Data",
+    location: "Austin, TX",
+    startDate: "March 2021",
+    endDate: "July 2021",
+    bullets: [
+      "Led all UX/UI design for 3D data visualization startup, owning full product design process from concept through interactive Figma prototype",
+      "Conducted user research and workflow mapping to define interaction patterns for complex 3D data visualization interfaces",
+      "Delivered responsive, stakeholder-ready prototypes under startup pace, demonstrating ability to move quickly without sacrificing design quality"
     ],
-    context: "My first professional development experience where I learned industry best practices and teamwork. This internship solidified my passion for web development and taught me the importance of writing clean, maintainable code.",
-    type: "internship"
+    stack: ["Figma", "UX Research", "3D Visualization", "Prototyping", "Workflow Mapping"]
+  },
+  {
+    id: "6",
+    title: "UX/UI Developer",
+    company: "TCS / Apple Vendor",
+    location: "Austin, TX",
+    startDate: "June 2019",
+    endDate: "March 2021",
+    bullets: [
+      "Designed and developed responsive UI components for 3 internal Apple tools using React, AEM, SCSS, and Vanilla JavaScript, aligned with Apple's strict design standards and accessibility requirements",
+      "Built AEM-based component libraries improving UI consistency and reducing design-to-development handoff time across internal teams",
+      "Created wireframes, interactive prototypes, and WCAG-compliant layouts, participating in usability evaluations and design sprints to refine features based on user feedback",
+      "Mentored 1–3 junior developers on code quality, Git workflows, and front-end best practices"
+    ],
+    stack: ["React", "AEM", "SCSS", "JavaScript", "WCAG", "Git", "Prototyping"]
+  },
+  {
+    id: "7",
+    title: "UX/UI Designer",
+    company: "LTI / Apple Vendor",
+    location: "Austin, TX",
+    startDate: "March 2019",
+    endDate: "June 2019",
+    bullets: [
+      "Led small team to design and build new internal application for Apple's customer service and sales organization, saving 50+ staff an estimated 3–4 hours per person per day in manual workflow time",
+      "Owned end-to-end UX process including stakeholder interviews, design sprints, and usability testing to define and validate the application experience",
+      "Participated in usability evaluations and design sprints, refining features based on user feedback",
+      "Developed responsive UI components using Angular, HTML, CSS, and JavaScript, ensuring accessibility and design consistency throughout"
+    ],
+    stack: ["Angular", "HTML", "CSS", "JavaScript", "Design Sprints", "Usability Testing", "Accessibility"]
+  },
+  {
+    id: "8",
+    title: "UI Developer",
+    company: "NTTData / TxDot Vendor",
+    location: "Austin, TX",
+    startDate: "October 2018",
+    endDate: "March 2019",
+    bullets: [
+      "Built and optimized UI components using Angular, HTML, CSS, and JavaScript for Texas Department of Transportation internal tools",
+      "Collaborated with UX teams to ensure accessibility compliance and design consistency across applications"
+    ],
+    stack: ["Angular", "HTML", "CSS", "JavaScript", "Accessibility"]
+  },
+  {
+    id: "9",
+    title: "UX/UI Designer and Developer",
+    company: "DeveloperProgram.com / Constellant",
+    location: "Austin, TX",
+    startDate: "July 2014",
+    endDate: "October 2018",
+    bullets: [
+      "Designed and developed responsive web applications using HTML, CSS, JavaScript, and proprietary CMS tools across 4-year tenure",
+      "Created interactive prototypes and conducted user testing to validate and refine user experience",
+      "Provided mentorship and leadership to cross-functional design and development teams"
+    ],
+    stack: ["HTML", "CSS", "JavaScript", "Prototyping", "User Testing", "CMS"]
   }
 ];
-
-export const getRolesByType = (type: ResumeRole['type']): ResumeRole[] => {
-  return resumeRoles.filter(role => role.type === type);
-};
 
 export const getCurrentRole = (): ResumeRole | undefined => {
   return resumeRoles.find(role => role.current);

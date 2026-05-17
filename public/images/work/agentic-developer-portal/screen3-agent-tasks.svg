@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <defs>
+    <style>text { font-family: Inter, -apple-system, sans-serif; } .mono { font-family: 'Courier New', monospace; }</style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1440" height="900" fill="#F7F6F3"/>
+
+  <!-- ── SIDEBAR ── -->
+  <rect x="0" y="0" width="220" height="900" fill="#FFFFFF"/>
+  <rect x="219" y="0" width="1" height="900" fill="#E3E1DC"/>
+  <rect x="14" y="13" width="22" height="22" rx="5" fill="#111110"/>
+  <text x="44" y="29" font-size="13" font-weight="600" fill="#111110">DevPortal</text>
+  <rect x="0" y="47" width="220" height="1" fill="#E3E1DC"/>
+  <text x="14" y="74" font-size="10" font-weight="600" fill="#9B9890" letter-spacing="0.7">WORKSPACES</text>
+  <rect x="4" y="82" width="212" height="32" rx="6" fill="#F2F1EE"/>
+  <circle cx="17" cy="98" r="4" fill="#34C759"/>
+  <text x="28" y="103" font-size="12" font-weight="500" fill="#111110">apple-internal</text>
+  <text x="14" y="212" font-size="10" font-weight="600" fill="#9B9890" letter-spacing="0.7">NAVIGATION</text>
+  <rect x="4" y="220" width="212" height="32" rx="6" fill="#F2F1EE"/>
+  <text x="30" y="241" font-size="12" font-weight="500" fill="#111110">Repositories</text>
+  <!-- Agent running indicator -->
+  <rect x="0" y="856" width="220" height="1" fill="#E3E1DC"/>
+  <circle cx="20" cy="878" r="4" fill="#D97706"/>
+  <text x="30" y="882" font-size="11" fill="#9B9890">Agent running…</text>
+
+  <!-- ── TOPBAR ── -->
+  <rect x="220" y="0" width="1220" height="48" fill="#FFFFFF"/>
+  <rect x="220" y="47" width="1220" height="1" fill="#E3E1DC"/>
+  <text x="240" y="29" font-size="12.5" fill="#9B9890">Repositories</text>
+  <text x="318" y="29" font-size="12" fill="#9B9890">/</text>
+  <text x="330" y="29" font-size="12.5" fill="#9B9890">ml-inference-engine</text>
+  <text x="488" y="29" font-size="12" fill="#9B9890">/</text>
+  <text x="500" y="29" font-size="12.5" font-weight="500" fill="#111110">Agent Tasks</text>
+  <!-- Run button -->
+  <rect x="1196" y="10" width="206" height="28" rx="6" fill="#16A34A"/>
+  <text x="1214" y="29" font-size="12" font-weight="500" fill="#FFFFFF">▷  Run: Upgrade dependencies</text>
+  <circle cx="1406" cy="24" r="13" fill="#EBF4FF"/>
+  <text x="1399" y="29" font-size="10" font-weight="600" fill="#0F7AE5">JD</text>
+
+  <!-- ── TASK GRID ── -->
+  <rect x="220" y="48" width="1220" height="400" fill="#F7F6F3"/>
+  <text x="240" y="76" font-size="10.5" font-weight="600" fill="#9B9890" letter-spacing="0.6">CHOOSE TASK</text>
+
+  <!-- Task Card 1: Upgrade (selected) -->
+  <rect x="240" y="88" width="380" height="116" rx="10" fill="#EBF4FF" stroke="#0F7AE5" stroke-width="1"/>
+  <text x="254" y="114" font-size="18" fill="#111110">📦</text>
+  <text x="254" y="140" font-size="12.5" font-weight="600" fill="#111110">Upgrade dependencies</text>
+  <text x="254" y="158" font-size="11" fill="#9B9890">Auto-update packages, create PR</text>
+
+  <!-- Task Card 2: Create PR -->
+  <rect x="630" y="88" width="380" height="116" rx="10" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="644" y="114" font-size="18" fill="#111110">↔</text>
+  <text x="644" y="140" font-size="12.5" font-weight="600" fill="#111110">Create pull request</text>
+  <text x="644" y="158" font-size="11" fill="#9B9890">Draft PR from current changes</text>
+
+  <!-- Task Card 3: Refactor -->
+  <rect x="1020" y="88" width="380" height="116" rx="10" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="1034" y="114" font-size="18" fill="#111110">✦</text>
+  <text x="1034" y="140" font-size="12.5" font-weight="600" fill="#111110">Refactor code</text>
+  <text x="1034" y="158" font-size="11" fill="#9B9890">Identify and fix code smells</text>
+
+  <!-- Task Card 4: Run tests -->
+  <rect x="240" y="216" width="380" height="116" rx="10" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="254" y="242" font-size="18" fill="#111110">▷</text>
+  <text x="254" y="268" font-size="12.5" font-weight="600" fill="#111110">Run tests</text>
+  <text x="254" y="286" font-size="11" fill="#9B9890">Execute full test suite</text>
+
+  <!-- Task Card 5: Security scan -->
+  <rect x="630" y="216" width="380" height="116" rx="10" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="644" y="242" font-size="18" fill="#111110">⊛</text>
+  <text x="644" y="268" font-size="12.5" font-weight="600" fill="#111110">Security scan</text>
+  <text x="644" y="286" font-size="11" fill="#9B9890">Audit for CVEs and vulns</text>
+
+  <!-- Task Card 6: Dep graph -->
+  <rect x="1020" y="216" width="380" height="116" rx="10" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="1034" y="242" font-size="18" fill="#111110">◎</text>
+  <text x="1034" y="268" font-size="12.5" font-weight="600" fill="#111110">Dependency graph</text>
+  <text x="1034" y="286" font-size="11" fill="#9B9890">Map all package relationships</text>
+
+  <!-- ── EXECUTION PANEL ── -->
+  <rect x="220" y="448" width="1220" height="452" fill="#FFFFFF"/>
+  <rect x="220" y="448" width="1220" height="1" fill="#E3E1DC"/>
+
+  <!-- Exec header -->
+  <rect x="220" y="448" width="1220" height="44" fill="#FFFFFF"/>
+  <rect x="220" y="491" width="1220" height="1" fill="#E3E1DC"/>
+  <circle cx="238" cy="470" r="4" fill="#D97706"/>
+  <text x="250" y="475" font-size="12.5" font-weight="600" fill="#111110">Upgrade dependencies · running</text>
+  <text x="460" y="474" font-size="11.5" fill="#9B9890" class="mono">02:14</text>
+  <!-- Details button -->
+  <rect x="1322" y="458" width="74" height="28" rx="6" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="1336" y="477" font-size="12" font-weight="500" fill="#605E59">Details</text>
+
+  <!-- Log lines -->
+  <text x="236" y="514" font-size="10.5" fill="#9B9890" class="mono">09:14:02</text>
+  <text x="300" y="514" font-size="10.5" font-weight="700" fill="#16A34A" class="mono">[ok]</text>
+  <text x="348" y="514" font-size="10.5" fill="#605E59" class="mono">Fetched package manifest from package.json</text>
+
+  <text x="236" y="532" font-size="10.5" fill="#9B9890" class="mono">09:14:03</text>
+  <text x="300" y="532" font-size="10.5" font-weight="700" fill="#0F7AE5" class="mono">[info]</text>
+  <text x="348" y="532" font-size="10.5" fill="#605E59" class="mono">Found 47 dependencies · checking for updates...</text>
+
+  <text x="236" y="550" font-size="10.5" fill="#9B9890" class="mono">09:14:06</text>
+  <text x="300" y="550" font-size="10.5" font-weight="700" fill="#D97706" class="mono">[warn]</text>
+  <text x="348" y="550" font-size="10.5" fill="#605E59" class="mono">2 major version bumps detected — creating review branch</text>
+
+  <text x="236" y="568" font-size="10.5" fill="#9B9890" class="mono">09:14:09</text>
+  <text x="300" y="568" font-size="10.5" font-weight="700" fill="#16A34A" class="mono">[ok]</text>
+  <text x="348" y="568" font-size="10.5" fill="#605E59" class="mono">Branch agent/upgrade-deps-2024-01-15 created</text>
+
+  <text x="236" y="586" font-size="10.5" fill="#9B9890" class="mono">09:16:14</text>
+  <text x="300" y="586" font-size="10.5" font-weight="700" fill="#605E59" class="mono">[run]</text>
+  <text x="348" y="586" font-size="10.5" fill="#605E59" class="mono">▌ Executing test suite (123 tests)...</text>
+
+  <!-- Progress bar -->
+  <rect x="220" y="604" width="1220" height="1" fill="#E3E1DC"/>
+  <text x="236" y="622" font-size="11" fill="#9B9890">Step 3 of 5 · Compatibility tests</text>
+  <rect x="430" y="616" width="880" height="3" rx="2" fill="#E8E6E1"/>
+  <rect x="430" y="616" width="457" height="3" rx="2" fill="#0F7AE5"/>
+  <text x="1318" y="622" font-size="11" fill="#9B9890" class="mono">52%</text>
+
+  <!-- Footer -->
+  <rect x="220" y="636" width="1220" height="1" fill="#E3E1DC"/>
+  <rect x="236" y="644" width="68" height="28" rx="6" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="252" y="663" font-size="12" font-weight="500" fill="#DC2626">Stop</text>
+  <text x="1240" y="663" font-size="11" fill="#9B9890">Agent is working…</text>
+
+</svg>

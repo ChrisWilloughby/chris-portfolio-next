@@ -1,0 +1,38 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" fill="#020409"/>
+  <rect width="1200" height="760" fill="url(#att-bg)"/>
+  <path d="M0 602H1200V760H0V602Z" fill="url(#att-floor)"/>
+  <g opacity="0.36">
+    <path d="M148 116H1052V594H148V116Z" fill="#030712" stroke="#93C5FD" stroke-opacity="0.18" stroke-width="2"/>
+    <path d="M190 162H1010V552H190V162Z" fill="#050A12" stroke="#E0F2FE" stroke-opacity="0.08"/>
+    <path d="M230 212H540V240H230V212Z" fill="#7DD3FC" fill-opacity="0.16"/>
+    <path d="M230 272H690V292H230V272Z" fill="#E0F2FE" fill-opacity="0.12"/>
+    <path d="M230 322H624V342H230V322Z" fill="#E0F2FE" fill-opacity="0.09"/>
+    <path d="M230 372H760V392H230V372Z" fill="#E0F2FE" fill-opacity="0.07"/>
+    <path d="M810 212H948V350H810V212Z" fill="#0F172A" stroke="#67E8F9" stroke-opacity="0.2"/>
+    <path d="M858 260L900 302L858 344" stroke="#BAE6FD" stroke-opacity="0.42" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M420 482H780" stroke="#67E8F9" stroke-opacity="0.2" stroke-width="2"/>
+    <circle cx="600" cy="482" r="66" stroke="#67E8F9" stroke-opacity="0.18"/>
+    <circle cx="600" cy="482" r="22" fill="#67E8F9" fill-opacity="0.12"/>
+  </g>
+  <g opacity="0.15">
+    <path d="M120 90L1080 670" stroke="#E0F2FE"/>
+    <path d="M1080 90L120 670" stroke="#E0F2FE"/>
+  </g>
+  <rect width="1200" height="760" fill="url(#att-vignette)"/>
+  <defs>
+    <radialGradient id="att-bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(624 198) rotate(91.5) scale(548 786)">
+      <stop stop-color="#0E7490" stop-opacity="0.34"/>
+      <stop offset="0.48" stop-color="#172554" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#020409" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="att-floor" x1="600" y1="602" x2="600" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#020409"/>
+    </linearGradient>
+    <radialGradient id="att-vignette" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 380) rotate(90) scale(502 792)">
+      <stop offset="0.38" stop-color="#020409" stop-opacity="0"/>
+      <stop offset="1" stop-color="#020409"/>
+    </radialGradient>
+  </defs>
+</svg>

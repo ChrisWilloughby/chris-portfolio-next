@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <defs>
+    <style>
+      text { font-family: Inter, -apple-system, sans-serif; }
+      .mono { font-family: 'Courier New', monospace; }
+    </style>
+  </defs>
+
+  <!-- Page background -->
+  <rect width="1440" height="900" fill="#F7F6F3"/>
+
+  <!-- ── SIDEBAR ── -->
+  <rect x="0" y="0" width="220" height="900" fill="#FFFFFF"/>
+  <rect x="219" y="0" width="1" height="900" fill="#E3E1DC"/>
+
+  <!-- Logo bar -->
+  <rect x="0" y="0" width="220" height="48" fill="#FFFFFF"/>
+  <rect x="14" y="13" width="22" height="22" rx="5" fill="#111110"/>
+  <text x="44" y="29" font-size="13" font-weight="600" fill="#111110">DevPortal</text>
+  <rect x="0" y="47" width="220" height="1" fill="#E3E1DC"/>
+
+  <!-- Workspaces label -->
+  <text x="14" y="74" font-size="10" font-weight="600" fill="#9B9890" letter-spacing="0.7">WORKSPACES</text>
+
+  <!-- Workspace: apple-internal (active) -->
+  <rect x="4" y="82" width="212" height="32" rx="6" fill="#F2F1EE"/>
+  <circle cx="17" cy="98" r="4" fill="#34C759"/>
+  <text x="28" y="103" font-size="12" font-weight="500" fill="#111110">apple-internal</text>
+
+  <!-- Workspace: open-source -->
+  <rect x="4" y="118" width="212" height="32" rx="6" fill="none"/>
+  <circle cx="17" cy="134" r="4" fill="#8E8E93"/>
+  <text x="28" y="139" font-size="12" fill="#605E59">open-source</text>
+
+  <!-- Workspace: archived -->
+  <rect x="4" y="154" width="212" height="32" rx="6" fill="none"/>
+  <circle cx="17" cy="170" r="4" fill="#FF9500"/>
+  <text x="28" y="175" font-size="12" fill="#605E59">archived</text>
+
+  <!-- Nav label -->
+  <text x="14" y="212" font-size="10" font-weight="600" fill="#9B9890" letter-spacing="0.7">NAVIGATION</text>
+
+  <!-- Nav: Repositories (active) -->
+  <rect x="4" y="220" width="212" height="32" rx="6" fill="#F2F1EE"/>
+  <text x="12" y="241" font-size="12" fill="#605E59">▦</text>
+  <text x="30" y="241" font-size="12" font-weight="500" fill="#111110">Repositories</text>
+
+  <!-- Nav: Activity -->
+  <rect x="4" y="256" width="212" height="32" rx="6" fill="none"/>
+  <text x="12" y="277" font-size="12" fill="#605E59">⊙</text>
+  <text x="30" y="277" font-size="12" fill="#605E59">Activity</text>
+
+  <!-- Nav: Settings -->
+  <rect x="4" y="292" width="212" height="32" rx="6" fill="none"/>
+  <text x="12" y="313" font-size="12" fill="#605E59">⊕</text>
+  <text x="30" y="313" font-size="12" fill="#605E59">Settings</text>
+
+  <!-- Sidebar footer -->
+  <rect x="0" y="856" width="220" height="1" fill="#E3E1DC"/>
+  <circle cx="20" cy="878" r="4" fill="#E3E1DC"/>
+  <text x="30" y="882" font-size="11" fill="#9B9890">No agents running</text>
+
+  <!-- ── TOPBAR ── -->
+  <rect x="220" y="0" width="1220" height="48" fill="#FFFFFF"/>
+  <rect x="220" y="47" width="1220" height="1" fill="#E3E1DC"/>
+  <text x="240" y="29" font-size="13" font-weight="600" fill="#111110">Repositories</text>
+  <!-- Avatar -->
+  <circle cx="1406" cy="24" r="13" fill="#EBF4FF"/>
+  <text x="1399" y="29" font-size="10" font-weight="600" fill="#0F7AE5">JD</text>
+
+  <!-- ── PAGE HEADER ── -->
+  <rect x="220" y="48" width="1220" height="90" fill="#FFFFFF"/>
+  <rect x="220" y="137" width="1220" height="1" fill="#E3E1DC"/>
+  <text x="240" y="76" font-size="16" font-weight="600" fill="#111110">Repositories</text>
+  <text x="240" y="98" font-size="12" fill="#9B9890">24 repositories · apple-internal workspace</text>
+
+  <!-- Search box -->
+  <rect x="240" y="108" width="280" height="32" rx="6" fill="#F2F1EE" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="256" y="129" font-size="12" fill="#9B9890">⌕  Search repositories…</text>
+
+  <!-- Filter chips -->
+  <rect x="530" y="108" width="36" height="32" rx="16" fill="#111110"/>
+  <text x="541" y="129" font-size="11.5" font-weight="500" fill="#FFFFFF">All</text>
+
+  <rect x="574" y="108" width="92" height="32" rx="16" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="586" y="129" font-size="11.5" fill="#605E59">TypeScript</text>
+
+  <rect x="674" y="108" width="62" height="32" rx="16" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="686" y="129" font-size="11.5" fill="#605E59">Python</text>
+
+  <rect x="744" y="108" width="50" height="32" rx="16" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="754" y="129" font-size="11.5" fill="#605E59">Swift</text>
+
+  <rect x="802" y="108" width="34" height="32" rx="16" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="811" y="129" font-size="11.5" fill="#605E59">Go</text>
+
+  <!-- ── REPO CARDS ── -->
+
+  <!-- Card 1: ml-inference-engine (selected) -->
+  <rect x="240" y="150" width="1180" height="80" rx="10" fill="#EBF4FF" stroke="#0F7AE5" stroke-width="1"/>
+  <rect x="254" y="166" width="28" height="28" rx="6" fill="#F2F1EE" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="292" y="182" font-size="13" font-weight="600" fill="#111110" class="mono">ml-inference-engine</text>
+  <text x="292" y="200" font-size="11.5" fill="#9B9890">Core ML inference pipeline · main</text>
+  <!-- badge -->
+  <rect x="1310" y="162" width="80" height="22" rx="4" fill="#FFFBEB"/>
+  <text x="1320" y="177" font-size="11" font-weight="500" fill="#D97706">3 issues</text>
+  <!-- meta -->
+  <circle cx="293" cy="215" r="4" fill="#3178C6"/>
+  <text x="302" y="219" font-size="11" fill="#9B9890">TypeScript   ·   Updated 2h ago   ·   ★ 1.2k</text>
+
+  <!-- Card 2: data-pipeline-v2 -->
+  <rect x="240" y="240" width="1180" height="80" rx="10" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <rect x="254" y="256" width="28" height="28" rx="6" fill="#F2F1EE" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="292" y="272" font-size="13" font-weight="600" fill="#111110" class="mono">data-pipeline-v2</text>
+  <text x="292" y="290" font-size="11.5" fill="#9B9890">ETL orchestration service · main</text>
+  <rect x="1322" y="252" width="68" height="22" rx="4" fill="#F0FDF4"/>
+  <text x="1332" y="267" font-size="11" font-weight="500" fill="#16A34A">Healthy</text>
+  <circle cx="293" cy="305" r="4" fill="#3572A5"/>
+  <text x="302" y="309" font-size="11" fill="#9B9890">Python   ·   Updated 1d ago   ·   ★ 847</text>
+
+  <!-- Card 3: auth-service -->
+  <rect x="240" y="330" width="1180" height="80" rx="10" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <rect x="254" y="346" width="28" height="28" rx="6" fill="#F2F1EE" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="292" y="362" font-size="13" font-weight="600" fill="#111110" class="mono">auth-service</text>
+  <text x="292" y="380" font-size="11.5" fill="#9B9890">OAuth2 + JWT gateway · main</text>
+  <rect x="1298" y="342" width="102" height="22" rx="4" fill="#FEF2F2"/>
+  <text x="1308" y="357" font-size="11" font-weight="500" fill="#DC2626">Build failing</text>
+  <circle cx="293" cy="395" r="4" fill="#F05138"/>
+  <text x="302" y="399" font-size="11" fill="#9B9890">Swift   ·   Updated 3d ago   ·   ★ 412</text>
+
+  <!-- Card 4: design-system -->
+  <rect x="240" y="420" width="1180" height="80" rx="10" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <rect x="254" y="436" width="28" height="28" rx="6" fill="#F2F1EE" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="292" y="452" font-size="13" font-weight="600" fill="#111110" class="mono">design-system</text>
+  <text x="292" y="470" font-size="11.5" fill="#9B9890">Shared UI component library · main</text>
+  <rect x="1322" y="432" width="68" height="22" rx="4" fill="#F0FDF4"/>
+  <text x="1332" y="447" font-size="11" font-weight="500" fill="#16A34A">Healthy</text>
+  <circle cx="293" cy="485" r="4" fill="#3178C6"/>
+  <text x="302" y="489" font-size="11" fill="#9B9890">TypeScript   ·   Updated 4h ago   ·   ★ 2.1k</text>
+
+  <!-- Card 5: api-gateway -->
+  <rect x="240" y="510" width="1180" height="80" rx="10" fill="#FFFFFF" stroke="#E3E1DC" stroke-width="1"/>
+  <rect x="254" y="526" width="28" height="28" rx="6" fill="#F2F1EE" stroke="#E3E1DC" stroke-width="1"/>
+  <text x="292" y="542" font-size="13" font-weight="600" fill="#111110" class="mono">api-gateway</text>
+  <text x="292" y="560" font-size="11.5" fill="#9B9890">Rate-limiting + routing layer · main</text>
+  <rect x="1316" y="522" width="84" height="22" rx="4" fill="#FFFBEB"/>
+  <text x="1326" y="537" font-size="11" font-weight="500" fill="#D97706">1 issue</text>
+  <circle cx="293" cy="575" r="4" fill="#00ADD8"/>
+  <text x="302" y="579" font-size="11" fill="#9B9890">Go   ·   Updated 6h ago   ·   ★ 634</text>
+
+</svg>

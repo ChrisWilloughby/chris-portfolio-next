@@ -1,0 +1,38 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" fill="#020409"/>
+  <rect width="1200" height="760" fill="url(#cisco-bg)"/>
+  <g opacity="0.34">
+    <rect x="164" y="146" width="872" height="468" rx="18" fill="#030712" stroke="#E0F2FE" stroke-opacity="0.11" stroke-width="2"/>
+    <rect x="230" y="226" width="190" height="120" rx="10" fill="#0F172A" stroke="#67E8F9" stroke-opacity="0.17"/>
+    <rect x="505" y="226" width="190" height="120" rx="10" fill="#111827" stroke="#67E8F9" stroke-opacity="0.19"/>
+    <rect x="780" y="226" width="190" height="120" rx="10" fill="#0F172A" stroke="#67E8F9" stroke-opacity="0.17"/>
+    <rect x="368" y="438" width="190" height="120" rx="10" fill="#111827" stroke="#E0F2FE" stroke-opacity="0.11"/>
+    <rect x="642" y="438" width="190" height="120" rx="10" fill="#111827" stroke="#E0F2FE" stroke-opacity="0.11"/>
+    <path d="M420 286H505" stroke="#BAE6FD" stroke-opacity="0.32" stroke-width="3"/>
+    <path d="M695 286H780" stroke="#BAE6FD" stroke-opacity="0.32" stroke-width="3"/>
+    <path d="M600 346V438" stroke="#BAE6FD" stroke-opacity="0.28" stroke-width="3"/>
+    <path d="M600 392H463V438" stroke="#BAE6FD" stroke-opacity="0.22" stroke-width="3"/>
+    <path d="M600 392H737V438" stroke="#BAE6FD" stroke-opacity="0.22" stroke-width="3"/>
+    <circle cx="325" cy="286" r="24" fill="#67E8F9" fill-opacity="0.12" stroke="#BAE6FD" stroke-opacity="0.34" stroke-width="4"/>
+    <circle cx="600" cy="286" r="24" fill="#67E8F9" fill-opacity="0.12" stroke="#BAE6FD" stroke-opacity="0.34" stroke-width="4"/>
+    <circle cx="875" cy="286" r="24" fill="#67E8F9" fill-opacity="0.12" stroke="#BAE6FD" stroke-opacity="0.34" stroke-width="4"/>
+    <path d="M430 498H496" stroke="#E0F2FE" stroke-opacity="0.22" stroke-width="8" stroke-linecap="round"/>
+    <path d="M704 498H770" stroke="#E0F2FE" stroke-opacity="0.22" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.1">
+    <path d="M164 614L1036 146" stroke="#E0F2FE"/>
+    <path d="M164 146L1036 614" stroke="#E0F2FE"/>
+  </g>
+  <rect width="1200" height="760" fill="url(#cisco-vignette)"/>
+  <defs>
+    <radialGradient id="cisco-bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(602 318) rotate(90) scale(474 760)">
+      <stop stop-color="#075985" stop-opacity="0.32"/>
+      <stop offset="0.5" stop-color="#172554" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#020409" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cisco-vignette" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 380) rotate(90) scale(494 782)">
+      <stop offset="0.4" stop-color="#020409" stop-opacity="0"/>
+      <stop offset="1" stop-color="#020409"/>
+    </radialGradient>
+  </defs>
+</svg>

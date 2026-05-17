@@ -10,25 +10,42 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Chris Willoughby - Portfolio",
-    template: "%s | Chris Willoughby"
-  },
-  description: "Full-stack developer specializing in modern web technologies. Explore my work, experience, and creative projects.",
-  keywords: ["portfolio", "web development", "full-stack", "developer", "frontend", "backend"],
+  title: "Chris Willoughby — UX Designer & UI Engineer",
+  description:
+    "Senior UX Designer and UI Engineer specializing in design systems, React, and product UX. Portfolio, case studies, and selected front-end work by Chris Willoughby.",
+
+  keywords: [
+    "Chris Willoughby",
+    "UX Designer",
+    "UI Engineer",
+    "Product Designer",
+    "Design Systems",
+    "React Developer",
+    "Next.js",
+    "Frontend Developer",
+    "Portfolio"
+  ],
+
   authors: [{ name: "Chris Willoughby" }],
+  creator: "Chris Willoughby",
+
   openGraph: {
-    title: "Chris Willoughby - Portfolio",
-    description: "Full-stack developer specializing in modern web technologies. Explore my work, experience, and creative projects.",
-    type: "website",
+    title: "Chris Willoughby — UX Designer & UI Engineer",
+    description:
+      "Senior UX Designer and UI Engineer specializing in design systems, React, and product UX.",
+    url: "https://yourdomain.com", // change later
+    siteName: "Chris Willoughby Portfolio",
     locale: "en_US",
-    url: "https://chriswilloughby.dev",
+    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Chris Willoughby - Portfolio",
-    description: "Full-stack developer specializing in modern web technologies.",
+    title: "Chris Willoughby — UX Designer & UI Engineer",
+    description:
+      "Senior UX Designer and UI Engineer specializing in design systems and React.",
   },
+
   robots: {
     index: true,
     follow: true,
