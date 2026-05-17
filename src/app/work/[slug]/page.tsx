@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { TableOfContents } from "@/components/ui/table-of-contents";
 import { getMDXPost, getMDXPostSlugs } from "@/lib/mdx";
 import { getProjectBySlug } from "@/data/projects";
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: PageProps) {
 
   return {
     title: `${project.title} | Chris Willoughby`,
-    description: project.summary,
+    description: project.shortDescription,
   };
 }
 
@@ -65,42 +65,25 @@ export default async function ProjectPage({ params }: PageProps) {
             </h1>
             
             <p className="text-xl text-muted-foreground mb-6 max-w-3xl">
-              {project.summary}
+              {project.shortDescription}
             </p>
             
             <div className="flex flex-wrap gap-2 mb-6">
-              {project.stack.map((tech) => (
+              {project.tools.map((tech) => (
                 <Badge key={tech} variant="secondary">
                   {tech}
                 </Badge>
               ))}
             </div>
           </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 lg:flex-col">
-            {project.links.live && (
-              <Button asChild>
-                <a href={project.links.live} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  View Project
-                </a>
-              </Button>
-            )}
-            {project.links.github && (
-              <Button variant="outline" asChild>
-                <a href={project.links.github} target="_blank" rel="noopener noreferrer">
-                  <Github className="mr-2 h-4 w-4" />
-                  View Code
-                </a>
-              </Button>
-            )}
-          </div>
         </div>
         
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
-          <span>Year: {project.year}</span>
+          <span>{project.role}</span>
           <span>•</span>
           <span>{post.readingTime}</span>
+          <span>•</span>
+          <span>{project.status}</span>
           {project.featured && (
             <>
               <span>•</span>
@@ -130,24 +113,7 @@ export default async function ProjectPage({ params }: PageProps) {
               </Link>
             </Button>
             
-            <div className="flex gap-4">
-              {project.links.github && (
-                <Button variant="ghost" size="sm" asChild>
-                  <a href={project.links.github} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" />
-                    GitHub
-                  </a>
-                </Button>
-              )}
-              {project.links.live && (
-                <Button variant="ghost" size="sm" asChild>
-                  <a href={project.links.live} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
-                  </a>
-                </Button>
-              )}
-            </div>
+            <Badge variant="outline">{project.category}</Badge>
           </div>
         </div>
 
