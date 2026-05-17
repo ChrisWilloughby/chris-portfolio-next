@@ -261,7 +261,7 @@ export default function AgenticDeveloperPortalPage() {
             <div className="aspect-[16/10] w-full bg-black">
               <iframe
                 title="Agentic Developer Portal live product preview"
-                src="https://agenticdevportal.netlify.app/"
+                src="https://agentic-dev-portal-kohl.vercel.app"
                 className="h-full w-full border-0"
                 loading="lazy"
               />

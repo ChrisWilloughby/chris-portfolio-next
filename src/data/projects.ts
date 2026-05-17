@@ -158,7 +158,7 @@ export const projects: Project[] = [
     ],
     status: "Case Study",
     href: "/work/developer-portal-system",
-    featured: true,
+    featured: false,
     image: "/images/work/developer-portal-system.png"
   },
   {

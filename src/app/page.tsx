@@ -12,13 +12,13 @@ export default function Home() {
       <HeroBanner />
       
       {/* Homepage Sections */}
-      <main id="main-content">
+      <>
         <SnapshotSection />
         <ResumePreviewSection />
         <FeaturedWorkSection />
         <SinistralDesignSystemSection />
         <FinalCTASection />
-      </main>
+      </>
     </div>
   );
 }

@@ -33,7 +33,6 @@ export const metadata: Metadata = {
     title: "Chris Willoughby — UX Designer & UI Engineer",
     description:
       "Senior UX Designer and UI Engineer specializing in design systems, React, and product UX.",
-    url: "https://yourdomain.com", // change later
     siteName: "Chris Willoughby Portfolio",
     locale: "en_US",
     type: "website",
@@ -61,7 +60,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
         <Navigation />
-        <main className="flex-1">
+        <main id="main-content" className="flex-1">
           {children}
         </main>
         <Footer />

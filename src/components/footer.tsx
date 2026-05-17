@@ -3,19 +3,22 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 const socialLinks = [
   {
-    href: "https://github.com/chriswilloughby",
+    href: "https://github.com/ChrisWilloughby",
     label: "GitHub",
     icon: Github,
+    external: true,
   },
   {
-    href: "https://linkedin.com/in/chriswilloughby",
+    href: "https://www.linkedin.com/in/chris-willoughby-06a1b83b/",
     label: "LinkedIn", 
     icon: Linkedin,
+    external: true,
   },
   {
-    href: "mailto:chris@example.com",
+    href: "mailto:cwilloughby132@gmail.com",
     label: "Email",
     icon: Mail,
+    external: false,
   },
 ];
 
@@ -36,8 +39,8 @@ export function Footer() {
                   <Link
                     key={link.label}
                     href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target={link.external ? "_blank" : undefined}
+                    rel={link.external ? "noopener noreferrer" : undefined}
                     className="text-muted-foreground hover:text-foreground transition-colors"
                     aria-label={link.label}
                   >

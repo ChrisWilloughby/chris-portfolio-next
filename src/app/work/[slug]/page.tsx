@@ -16,7 +16,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const slugs = getMDXPostSlugs();
+  const slugs = getMDXPostSlugs().filter((slug) => getProjectBySlug(slug));
   return slugs.map((slug) => ({
     slug,
   }));

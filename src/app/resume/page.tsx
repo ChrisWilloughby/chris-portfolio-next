@@ -1,27 +1,12 @@
 "use client";
 import Link from "next/link";
-import { Download, Mail, MapPin, Calendar, ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
+import { Download, Mail, MapPin, Calendar, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { resumeRoles } from "@/data/resume";
-import { useState } from "react";
 
 export default function ResumePage() {
-  const [expandedRoles, setExpandedRoles] = useState<Set<string>>(new Set());
-
-  const toggleExpanded = (roleId: string) => {
-    const newExpanded = new Set(expandedRoles);
-    if (newExpanded.has(roleId)) {
-      newExpanded.delete(roleId);
-    } else {
-      newExpanded.add(roleId);
-    }
-    setExpandedRoles(newExpanded);
-  };
-
   const formatDateRange = (startDate: string, endDate?: string, current?: boolean) => {
     if (current) {
       return `${startDate} - Present`;
@@ -40,9 +25,11 @@ export default function ResumePage() {
             UI Engineer and UX Designer with 10+ years of experience leading design and development of enterprise-scale digital products.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="border border-white/10 bg-white/[0.02] hover:bg-white/[0.05] text-white">
-              <Download className="mr-2 h-4 w-4" />
-              Download PDF
+            <Button size="lg" asChild className="border border-white/10 bg-white/[0.02] hover:bg-white/[0.05] text-white">
+              <a href="/resume/chris-willoughby-resume.pdf" download>
+                <Download className="mr-2 h-4 w-4" />
+                Download PDF
+              </a>
             </Button>
             <Button variant="outline" size="lg" asChild className="border-white/10 bg-white/[0.02] hover:bg-white/[0.05] text-white">
               <Link href="/contact">
@@ -181,10 +168,10 @@ export default function ResumePage() {
                 </Link>
               </Button>
               <Button variant="outline" asChild className="border-white/10 bg-white/[0.02] hover:bg-white/[0.05] text-white">
-                <a href="/work">
+                <Link href="/work">
                   <ExternalLink className="mr-2 h-4 w-4" />
                   View My Work
-                </a>
+                </Link>
               </Button>
             </div>
           </CardContent>
