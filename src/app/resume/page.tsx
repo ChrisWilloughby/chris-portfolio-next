@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { Download, Mail, MapPin, Calendar, ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -44,10 +45,10 @@ export default function ResumePage() {
               Download PDF
             </Button>
             <Button variant="outline" size="lg" asChild className="border-white/10 bg-white/[0.02] hover:bg-white/[0.05] text-white">
-              <a href="mailto:cwilloughby132@gmail.com">
+              <Link href="/contact">
                 <Mail className="mr-2 h-4 w-4" />
                 Contact Me
-              </a>
+              </Link>
             </Button>
           </div>
         </section>
@@ -174,10 +175,10 @@ export default function ResumePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild className="border border-white/10 bg-white/[0.02] hover:bg-white/[0.05] text-white">
-                <a href="mailto:cwilloughby132@gmail.com">
+                <Link href="/contact">
                   <Mail className="mr-2 h-4 w-4" />
                   Get in Touch
-                </a>
+                </Link>
               </Button>
               <Button variant="outline" asChild className="border-white/10 bg-white/[0.02] hover:bg-white/[0.05] text-white">
                 <a href="/work">
